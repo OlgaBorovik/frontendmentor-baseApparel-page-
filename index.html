@@ -15,13 +15,39 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="header__logo">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source src="./images/hero-mobile.jpg"  >
+        <source src="./images/hero-desktop.jpg" max>
+        <img class="hero__image" src="./images/hero-mobile.jpg"/>
+      </picture>
 
-  We're coming soon
+      
+    </section>
+    <section class="section">
+      <h1 class="section__heading">We're coming soon</h1>
+      <p class="section__text">Hello fellow shoppers! We're currently building our new fashion store. 
+  Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form class="section__form">
+          <input type="email" placeholder="Email Address" class="form__input">
+          <button type="submit" class="form__btn">
+            <img src="./images/icon-arrow.svg">
+          </button>
+        </form>
+    </section>
+  </main>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  
 
-  Email Address
+  
+
+  
   
   <footer>
     <p class="attribution">
