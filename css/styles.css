@@ -40,6 +40,7 @@ body {
     background: linear-gradient(149.89deg, rgb(255, 255, 255) 19.964%, rgb(255, 244, 244) 115.203%);
     font-family: "Josefin Sans", sans-serif;;
     font-size: 14px;
+    
     @media (min-width: 768px)  {
         background: url(/images/bg-pattern-desktop.svg) no-repeat;
         background-size: cover;
@@ -90,11 +91,16 @@ main{
     display: none;
     @media screen and (min-width:768px) {
             display: block;
-            margin-bottom: 136px;
+            margin-bottom:40px;
         }
+    @media screen and (min-width:1440px) {
+        display: block;
+        margin-bottom: 136px;
+    }
+
 }
 .header__icon{
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1440px) {
         width: 156px;
         height: 33px; 
         }
@@ -107,10 +113,24 @@ main{
         }
 }
 
+.hero img{
+    @media screen and (min-width:768px) {
+            width: 100%;
+        }
+   }
+
 .section{
     padding-left: 32px;
     padding-right: 32px;
     @media screen and (min-width:768px) {
+            width: 60%;
+            padding-top: 40px;
+            padding-left: 100px;
+            /* padding-right: 100px; */
+    
+        }
+
+    @media screen and (min-width:1440px) {
             width: 60%;
             padding-top: 65px;
             padding-left: 165px;
@@ -130,6 +150,14 @@ main{
         text-transform: uppercase;
         margin-bottom: 16px;
         @media screen and (min-width:768px) {
+                font-size: 42px;
+                line-height: 1.1;
+                letter-spacing: 14px;
+                text-align: left;
+                margin-bottom: 24px;
+            }
+
+        @media screen and (min-width:1440px) {
                 font-size: 64px;
                 line-height: 1.1;
                 letter-spacing: 17.32px;
@@ -151,8 +179,11 @@ main{
     margin-bottom: 32px;
     @media screen and (min-width:768px) {
             text-align: left;
-            margin-bottom: 40px;
-        }
+    }
+    @media screen and (min-width:1440px) {
+        margin-bottom: 40px;
+    }
+
 }
 .section__form{
     position: relative;
@@ -172,7 +203,7 @@ main{
     opacity: 0.5;
     background-color: transparent;
     padding-left: 24px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1440px) {
            height: 56px;
         }
 }
@@ -199,7 +230,7 @@ main{
         border-radius: 28px;
         box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
         background: linear-gradient(135.00deg, rgb(248, 191, 191) -14%, rgb(238, 139, 139) 86%);
-@media screen and (min-width:768px) {
+@media screen and (min-width:1440px) {
        height: 56px;
        width: 100px;
     }
